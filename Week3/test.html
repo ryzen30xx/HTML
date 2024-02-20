@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Welcome to Rocket Inc.</title>
+    <link rel="stylesheet" href="ex3.css">
+</head>
+
+<body>
+    <header>
+        <a href="http://127.0.0.1:5500/HTML/ex3.html?">
+            <img src="rocket-logo.png" alt="Rocket Inc. Logo">
+        </a>
+        <nav class=" social-icons">
+            <a href="https://www.facebook.com/" id="facebook-icon" target="_blank">
+                <img src="Facebook_icon.svg.webp" alt="facebook">
+            </a>
+            <a href="https://twitter.com/" id="twitter-icon" target="_blank">
+                <img src="png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png"
+                    alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/" id="instagram-icon" target="_blank">
+                <img src="instagram-icon-logo-free-png.webp" alt="instagram">
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Welcome to Rocket Inc.</h1>
+        <img id="rocket-image" src="rocket-image.png" alt="Rocket Image">
+
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <button type="submit">Submit</button>
+        </form>
+        <p style="font-size: 30px; line-height: 2;">
+            <span id="launch_counter">00:00:00 </span>
+            <button style="background: none; border: none;">
+                <img style="width: 30px; height: auto; display: block;"
+                    src="https://cdn0.iconfinder.com/data/icons/glyphpack/41/refresh-512.png" alt="">
+            </button>
+        </p>
+    </main>
+    <script>
+        // Set the date we're counting down to, we assign to a constant as this shouldn't be changedin our code.
+        // We are using the date object (https://www.w3schools.com/jsref/jsref_obj_date.asp) with adate string, a special string format that JS understands
+        //  We are then converting this to a unix timestamp, although in milliseconds not seconds
+        const lauchDate = new Date('January 30,2024 11:00:00').getTime()
+        const calculateDifference = () => {
+            const now = new Date().getTime()
+
+
+            // Work out the difference between the  two timestamps
+            return lauchDate - now;
+        }
+        const updateCounter = () => {
+            const timeDifference = calculateDifference()
+            // Calculate the time in days, hours, minutes, seconds
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000)
+
+            // Find the element we want to interact with by it&#39;s ID attribute
+            const outputElement = document.getElementById('launch_counter')
+
+            // Update the HTML of that element
+            outputElement.innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s"
+
+        }
+
+        
+    </script>
+    <button style="background: none; border: none;" onclick="alert('You clicked me')">
+    </button>
+</body>
+
+
+</html>
