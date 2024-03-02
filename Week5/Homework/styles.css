@@ -1,0 +1,57 @@
+* {
+	font-family: sans-serif;
+}
+
+#heading-title {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+
+}
+
+
+body {
+	background: linear-gradient(rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.2)50%), url(background.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+label, p {
+	color: rgba(255, 255, 255, 0.7);
+
+}
+
+.Form {
+	width: 290px;
+	height: 380px;
+	color: white;
+	background: linear-gradient(rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 0.6)50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	padding: 40px 25px;
+}
+
+button {
+	color: white;
+	font-size: 15px;
+	background-color: transparent;
+	border: rgba(167, 22, 240, 0.8);
+	box-shadow:
+	  inset #009688 0 0 0 5px, 
+	    inset #059c8e 0 0 0 1px, 
+	    inset #0cab9c 0 0 0 10px, 
+	    inset #1fbdae 0 0 0 11px, 
+	    inset #8ce9ff 0 0 0 16px, 
+	    inset #48e4d6 0 0 0 17px, 
+	    inset #e5f9f7 0 0 0 21px, 
+	    inset #bfecf7 0 0 0 22px;
+	margin-top: 20px;
+	margin-left: 90px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
