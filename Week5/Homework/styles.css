@@ -35,23 +35,42 @@ label, p {
 	padding: 40px 25px;
 }
 
-button {
+#confirmButton {
 	color: white;
 	font-size: 15px;
-	background-color: transparent;
+	background-color: rgba(99, 224, 255, 0.6);
 	border: rgba(167, 22, 240, 0.8);
-	box-shadow:
-	  inset #009688 0 0 0 5px, 
-	    inset #059c8e 0 0 0 1px, 
-	    inset #0cab9c 0 0 0 10px, 
-	    inset #1fbdae 0 0 0 11px, 
-	    inset #8ce9ff 0 0 0 16px, 
-	    inset #48e4d6 0 0 0 17px, 
-	    inset #e5f9f7 0 0 0 21px, 
-	    inset #bfecf7 0 0 0 22px;
 	margin-top: 20px;
 	margin-left: 90px;
 	font-weight: bold;
 	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#confirmButton:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+  	color: white;
+}
+
+textarea {
+	width: 283px;
+	height: 141px;
+	resize: none;
+}
+
+#copyButton {
+	background-color: rgba(99, 224, 255, 0.8);
+  	color: white;
+  	padding: 10px 15px;
+  	border: none;
+  	border-radius: 5px;
+  	cursor: pointer;
+  	margin-top: 20px; 
+  	transition: background-color 0.3s ease
+}
+
+#copyButton:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+  	color: white;
 }
 

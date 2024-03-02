@@ -29,4 +29,10 @@ for (var i = 0; i < value_input.value; i++) {
     password += characterSet[randomIndex];
 }
 
-result.innerHTML = "<strong>" + password + "</strong>";
+result.innerHTML = password;
+
+document.getElementById('copyButton').addEventListener('click', function() {
+  result.select();
+  document.execCommand('copy');
+  alert('Text copied to clipboard: ' + password);
+});
