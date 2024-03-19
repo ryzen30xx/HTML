@@ -10,7 +10,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html {
   color: #222;
   font-size: 1em;
