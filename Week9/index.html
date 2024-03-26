@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plane Shop</title>
+	<meta name="description" content="This is the description of my website that will appear in search results.">
+	<meta property="og:title" content="Plane shop">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://isharoverwhite.ddns.net/">
+    <meta property="og:description" content="This is the description of my website that will appear on social media platforms.">
+    <meta property="og:image" content="https://i.pinimg.com/736x/38/52/a0/3852a07d2f6828ca4c9d9547fac8bed3.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+		{
+		"@context": "http://schema.org",
+        "@type": "WebPage",
+        "name": "My Website",
+        "description": "A website about XYZ",
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header-mark">
+        <h1 id="web-des">My Website Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </div>
+
+   
+
+	
+
+
+	<div itemscope itemtype="http://schema.org/Product">
+        <h1 itemprop="name">Alien and Spaceship image</h1>
+        <img itemprop="image" src="https://i.pinimg.com/736x/38/52/a0/3852a07d2f6828ca4c9d9547fac8bed3.jpg">
+        <p itemprop="description">Alien with spaceship</p>
+        <div>
+            <p itemprop="price">20.00</p>
+            <p>
+                <span itemprop="priceCurrentcy" content="GBP">GBP</span>
+            </p>
+        </div>
+    </div>
+
+
+    <div itemscope itemtype="http://schema.org/Product">
+        <h1 itemprop="name">Cute Image</h1>
+        <img itemprop="image" src="product-2.jpg">
+        <p itemprop="description">Panda, Brown Bear, White Bear</p>
+        <div>
+            <p itemprop="price">50.00</p>
+            <p>
+                <span itemprop="priceCurrentcy" content="GBP">GBP</span>
+            </p>
+        </div>
+    </div>
+
+
+
+    <form action="#" id="myform" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+ 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+ 
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+ 
+        <input type="submit" value="Submit">
+    </form>
+
+     <footer>
+    	<p style="font-size: 15px; opacity: 0.5">&copy; My Website 2024</p>
+	</footer>
+
+</body>
+
+
+
+</html>
